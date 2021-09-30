@@ -1,3 +1,4 @@
+// 数组中获取重复的对象
 // key需为同一类型，比如都为字符串或数字类型
 const  findManyItemInArr = (arr: { [propName: string]: any }[], key: string) => {
   const obj: any = {};
