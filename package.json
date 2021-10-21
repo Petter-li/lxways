@@ -1,6 +1,6 @@
 {
   "name": "lxways",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "some functions",
   "main": "dist/src/index.js",
   "scripts": {
