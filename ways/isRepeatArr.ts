@@ -1,5 +1,5 @@
 import isArr from './isArr';
-const isRepeatArr = (arr: any[]) => {
+const isRepeatArr = (arr: any[]): boolean => {
   if(!isArr(arr)) {
     console.error('参数不为数组');
     return false;
