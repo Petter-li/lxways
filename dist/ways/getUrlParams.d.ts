@@ -1,2 +1,2 @@
-declare const getUrlParams: (query: string) => unknown;
+declare const getUrlParams: (query: string) => any;
 export default getUrlParams;

@@ -8,3 +8,4 @@ export { default as arrIsEqual } from '../ways/arrIsEqual';
 export { default as arrToObjectByKey } from '../ways/arrToObjectByKey';
 export { default as removeNullUndefined } from '../ways/removeNullUndefined';
 export { default as getUrlParams } from '../ways/getUrlParams';
+export { default as getArrFromMatrix } from '../ways/getArrFromMatrix';
