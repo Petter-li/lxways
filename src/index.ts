@@ -9,3 +9,5 @@ export { default as arrToObjectByKey } from '../ways/arrToObjectByKey';
 export { default as removeNullUndefined } from '../ways/removeNullUndefined';
 export { default as getUrlParams } from '../ways/getUrlParams';
 export { default as getArrFromMatrix } from '../ways/getArrFromMatrix';
+export { default as makeDateBetweenArr } from '../ways/makeDateBetweenArr';
+export { default as getTimeQuantumForDays } from '../ways/getTimeQuantumForDays';
