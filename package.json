@@ -1,8 +1,9 @@
 {
   "name": "lxways",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "some functions",
   "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -c config/webpack.common.js"
@@ -15,6 +16,7 @@
     "@babel/plugin-transform-runtime": "^7.15.0",
     "@babel/preset-env": "^7.15.6",
     "babel-loader": "^8.2.2",
+    "glob": "^8.0.3",
     "ts-loader": "^9.2.6",
     "typescript": "^4.4.3",
     "webpack": "^5.54.0",
@@ -24,5 +26,9 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@babel/runtime": "^7.15.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Petter-li/lxways"
   }
 }

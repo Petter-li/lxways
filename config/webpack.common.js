@@ -1,14 +1,32 @@
 // webpack.common.js
 const path = require('path');
+const glob = require('glob');
+
+function addEntry() {
+  const entry = {};
+  // const entryFiles = glob.sync(path.join(__dirname, "../ways/*.ts"));
+  const pathStr = path.join(__dirname, "../src/*.ts").replace(/\\/g,'/');
+  const entryFiles = glob.sync(pathStr);
+  entryFiles.map((_, index) => {
+    const entryFile = entryFiles[index];
+    const reg = /.*\/(.*?).ts$/;
+    const match = entryFile.match(reg);
+    const pageName = match[1];
+    entry[pageName] = entryFile;
+  });
+  // entry['index'] = path.resolve(__dirname, '../src/index.ts');
+  return entry;
+}
 
 module.exports = {
   mode: 'production',
-  entry: path.resolve(__dirname, '../src/index.ts'),
+  // entry: path.resolve(__dirname, '../src/index.ts'),
+  entry: addEntry(),
   output: {
     path: path.resolve(__dirname, '../dist/src'),
     publicPath: '/dist/',
     libraryTarget: 'umd',
-    filename: 'index.js',
+    filename: '[name].js',
     library: "ways"
   },
   resolve: {
