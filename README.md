@@ -8,6 +8,11 @@
 
 npm install lxways
 
+### 支持按需引入  
+import { arrIsEqual } from 'lxways'; // 全量引入  
+import arrIsEqual from 'lxways/dist/src/arrIsEqual'; // 只引入arrIsEqual  
+
+
 ### 方法调用举例
 
 arrDuplicateRemoveByKey：当数组中每一项为对象时，根据对象的某个key来去重
